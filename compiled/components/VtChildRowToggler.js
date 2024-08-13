@@ -34,9 +34,9 @@ var _default2 = {
             }
           },
           "onClick": props.toggle
-        }, [(0, _vue.createVNode)("span", {
+        }, [props.toggleable ? (0, _vue.createVNode)("span", {
           "class": "VueTables__child-row-toggler " + props["class"]()
-        }, null)]);
+        }, null) : '']);
       }
     });
   }

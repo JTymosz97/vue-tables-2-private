@@ -18,7 +18,7 @@ export default {
                         props.toggle();
                     }
                 }} onClick={props.toggle}>
-                    <span class={`VueTables__child-row-toggler ` + props.class()}></span>
+                    {props.toggleable ? <span class={`VueTables__child-row-toggler ` + props.class()}></span> : ''}
                 </td>
             }
         })
