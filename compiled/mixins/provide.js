@@ -121,7 +121,7 @@ module.exports = function () {
       return _this.initialRequestSent;
     },
     setRef: function setRef(key, el) {
-      console.log("++++++++++++++++++++++++++11111111111111++++++++++++++++++++++++++")
+      console.log("++++++++++++++++++++++++++11111111111111++++++++++++++++++++++++++ " + key + ' | ' + el)
       _this.refs[key] = el;
       console.log("++++++++++++++++++++++++++111111111111111++++++++++++++++++++++++++")
     },
