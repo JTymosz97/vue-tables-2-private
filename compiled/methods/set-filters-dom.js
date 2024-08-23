@@ -14,15 +14,18 @@ module.exports = function (query) {
 
           this._setDatepickerText(column, start, end);
         } else {
+          console.log("refs3.1")
           $(this.refs.filters[column]).html("<span class='VueTables__filter-placeholder'>" + this.display('filterBy', {
             column: this.getHeading(column)
           }) + "</span>");
+          console.log("refs3.2")
         }
 
         continue;
       }
-
+      console.log("refs4.1")
       el = this.refs.filters[column];
+      console.log("refs4.2")
 
       if (el) {
         el.value = query[column];
@@ -31,7 +34,9 @@ module.exports = function (query) {
       }
     }
   } else {
+    console.log("refs5.1")
     var el = this.refs.genericFilter;
+    console.log("refs5.2")
     if (el) el.value = query;
   }
 };

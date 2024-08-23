@@ -77,7 +77,9 @@ function install(app, globalOptions) {
       this._setFiltersDOM(this.query);
 
       if (this.opts.resizableColumns) {
+        console.log("refs6.1")
         (0, _resizeableColumns["default"])(this.refs.table, this.hasChildRow, this.opts.childRowTogglerFirst, this.resizableColumns, this.opts.stickyHeader);
+        console.log("refs6.2")
       }
 
       if (this.groupBy && this.groupBy.length > 1) {

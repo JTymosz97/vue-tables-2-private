@@ -36,7 +36,9 @@ module.exports = function () {
       range = {};
     }
 
+    console.log("refs1.1")
     el = $(that.refs.filters[column]);
+    console.log("refs1.2")
     columnOptions = typeof that.opts.datepickerPerColumnOptions[column] !== 'undefined' ? that.opts.datepickerPerColumnOptions[column] : {};
     columnOptions = merge.recursive(columnOptions, {
       locale: {
