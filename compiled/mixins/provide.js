@@ -122,6 +122,7 @@ module.exports = function () {
     },
     setRef: function setRef(key, el) {
       console.log("++++++++++++++++++++++++++11111111111111++++++++++++++++++++++++++ " + key + ' | ' + el)
+      console.log(el.value)
       _this.refs[key] = el;
       console.log("++++++++++++++++++++++++++22222222222222++++++++++++++++++++++++++")
     },

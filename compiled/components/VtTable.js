@@ -32,6 +32,7 @@ var _default2 = {
     };
   },
   mounted: function mounted() {
+    console.log("came from VtTable")
     this.setRef('table', this.$refs.table);
   },
   render: function render() {
