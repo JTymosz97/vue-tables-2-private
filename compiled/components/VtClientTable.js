@@ -66,48 +66,80 @@ function _default2(RLClientTable) {
     },
     methods: {
       setLoadingState: function setLoadingState(isLoading) {
+        console.log("///////////1")
         this.$refs.table.loading = isLoading;
+        console.log("///////////1")
       },
       setFilter: function setFilter(val) {
+        console.log("///////////2")
         this.$refs.table.setFilter(val);
+        console.log("///////////2")
       },
       setPage: function setPage(val) {
+        console.log("///////////3")
         this.$refs.table.setPage(val);
+        console.log("///////////3")
       },
       setOrder: function setOrder(column, asc) {
+        console.log("///////////4")
         this.$refs.table.setOrder(column, asc);
+        console.log("///////////4")
       },
       setLimit: function setLimit(limit) {
+        console.log("///////////5")
         this.$refs.table.setLimit(limit);
+        console.log("///////////5")
       },
       toggleChildRow: function toggleChildRow(rowId) {
+        console.log("///////////6")
         this.$refs.table.toggleChildRow(rowId);
+        console.log("///////////6")
       },
       getOpenChildRows: function getOpenChildRows() {
         var rows = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
-        return this.$refs.table.getOpenChildRows(rows);
+        console.log("///////////7")
+        let x = this.$refs.table.getOpenChildRows(rows);
+        console.log("///////////7")
+        return x
       },
       resetQuery: function resetQuery() {
+        console.log("///////////8")
         this.$refs.table.resetQuery();
+        console.log("///////////8")
       },
       setCustomFilters: function setCustomFilters(params) {
         var sendRequest = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-        return this.$refs.table.setCustomFilters(params, sendRequest);
+        console.log("///////////9")
+        let x =  this.$refs.table.setCustomFilters(params, sendRequest);
+        console.log("///////////9")
+        return x
       },
       downloadCsv: function downloadCsv() {
         var filename = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'table.csv';
-        return this.$refs.table.downloadCsv(filename);
+        console.log("///////////10")
+        let x =  this.$refs.table.downloadCsv(filename);
+        console.log("///////////10")
+        return x
       }
     },
     computed: {
       filteredData: function filteredData() {
-        return this.$refs.table.filteredData;
+        console.log("///////////11")
+        let x =  this.$refs.table.filteredData;
+        console.log("///////////11")
+        return x
       },
       allFilteredData: function allFilteredData() {
-        return this.$refs.table.allFilteredData;
+        console.log("///////////12")
+        let x =  this.$refs.table.allFilteredData;
+        console.log("///////////12")
+        return x
       },
       filtersCount: function filtersCount() {
-        return this.$refs.table.filtersCount;
+        console.log("///////////13")
+        let x =  this.$refs.table.filtersCount;
+        console.log("///////////13")
+        return x
       }
     },
     provide: function provide() {
