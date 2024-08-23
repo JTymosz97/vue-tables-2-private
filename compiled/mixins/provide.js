@@ -121,7 +121,9 @@ module.exports = function () {
       return _this.initialRequestSent;
     },
     setRef: function setRef(key, el) {
+      console.log("++++++++++++++++++++++++++11111111111111++++++++++++++++++++++++++")
       _this.refs[key] = el;
+      console.log("++++++++++++++++++++++++++111111111111111++++++++++++++++++++++++++")
     },
     setFilterRef: function setFilterRef(key, el) {
       _this.refs.filters[key] = el;
