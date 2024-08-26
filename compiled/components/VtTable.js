@@ -19,7 +19,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 var _default2 = {
   name: 'VtTable',
-  inject: ['setReffffff'],
+  inject: ['setRef'],
   components: {
     RLTable: _RLTable["default"],
     VtTableHead: _VtTableHead["default"],
@@ -33,7 +33,7 @@ var _default2 = {
   },
   mounted: function mounted() {
     console.log("came from VtTable")
-    this.setReffffff('table', this.$refs.table);
+    this.setRef('table', this.$refs.table);
     console.log("after from VtTable")
   },
   render: function render() {

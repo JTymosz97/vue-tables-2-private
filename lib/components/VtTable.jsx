@@ -6,7 +6,7 @@ import omit from "../helpers/omit"
 
 export default {
     name: 'VtTable',
-    inject: ['setReffffff'],
+    inject: ['setRef'],
     components: {RLTable, VtTableHead, VtTableBody},
     setup() {
         const table = ref(null);
@@ -17,7 +17,8 @@ export default {
     },
     mounted() {
         console.log("came from VtTable jsx")
-        this.setReffffff('table', this.$refs.table)
+        this.setRef('table', this.$refs.table)
+        console.log("after from VtTable jsx")
     },
     render() {
         return h(RLTable, {}, {

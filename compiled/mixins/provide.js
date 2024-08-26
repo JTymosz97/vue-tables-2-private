@@ -120,7 +120,7 @@ module.exports = function () {
     initialRequestSent: function initialRequestSent() {
       return _this.initialRequestSent;
     },
-    setReffffff: function setReffffff(key, el) {
+    setRef: function setRef(key, el) {
       console.log("++++++++++++++++++++++++++11111111111111++++++++++++++++++++++++++ " + key + ' | ' + el)
       _this.refs[key] = el;
       console.log("++++++++++++++++++++++++++22222222222222++++++++++++++++++++++++++")
