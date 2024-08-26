@@ -126,9 +126,7 @@ module.exports = function () {
       console.log("++++++++++++++++++++++++++22222222222222++++++++++++++++++++++++++")
     },
     setFilterRef: function setFilterRef(key, el) {
-      console.log("aaaaaaaaaaaaa3333333333333aaaaaaaaaaaaaa " + key + ' | ' + el)
       _this.refs.filters[key] = el;
-      console.log("bbbbbbbbb3333333333333bbbbbbbbbbbbbbbbb")
     }
   };
 };

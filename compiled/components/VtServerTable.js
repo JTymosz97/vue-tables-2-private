@@ -67,25 +67,17 @@ function _default2(RLServerTable) {
     computed: {
       customQueries: {
         get: function get() {
-          console.log("///////////35")
           return this.$refs.table.customQueries;
-          console.log("///////////36")
         },
         set: function set(val) {
-          console.log("///////////37")
           this.$refs.table.customQueries = val;
-          console.log("///////////38")
         }
       },
       data: function data() {
-        console.log("///////////39")
         return this.$refs.table.tableData;
-        console.log("///////////399")
       },
       selectedRows: function selectedRows() {
-        console.log("///////////37777")
         return this.$refs.table.selectedRows;
-        console.log("///////////323323")
       }
     },
     methods: {

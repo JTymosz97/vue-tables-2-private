@@ -16,9 +16,7 @@ export default {
         };
     },
     mounted() {
-        console.log("came from VtTable jsx")
         this.setRef('table', this.$refs.table)
-        console.log("after from VtTable jsx")
     },
     render() {
         return h(RLTable, {}, {

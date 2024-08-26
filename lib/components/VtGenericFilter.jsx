@@ -14,9 +14,7 @@ export default {
         };
     },
     mounted() {
-        console.log("settibg 1")
         this.setRef('genericFilter', this.$refs.filter)
-        console.log("settibg 2")
     },
     render() {
         return h(RLGenericFilter, {}, {

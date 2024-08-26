@@ -32,9 +32,7 @@ var _default2 = {
     };
   },
   mounted: function mounted() {
-    console.log("came from VtTable")
     this.setRef('table', this.$refs.table);
-    console.log("after from VtTable")
   },
   render: function render() {
     return (0, _vue.h)(_RLTable["default"], {}, {

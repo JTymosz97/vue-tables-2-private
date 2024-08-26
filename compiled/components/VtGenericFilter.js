@@ -26,9 +26,7 @@ var _default2 = {
     };
   },
   mounted: function mounted() {
-    console.log("///////////21")
     this.setRef('genericFilter', this.$refs.filter);
-    console.log("///////////22")
   },
   render: function render() {
     return (0, _vue.h)(_RLGenericFilter["default"], {}, {
@@ -54,14 +52,10 @@ var _default2 = {
   },
   methods: {
     focus: function focus() {
-      console.log("///////////23")
       this.$refs.filter.focus();
-      console.log("///////////24")
     },
     blur: function blur() {
-      console.log("///////////25")
       this.$refs.filter.blur();
-      console.log("///////////26")
     }
   }
 };

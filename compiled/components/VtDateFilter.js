@@ -27,9 +27,7 @@ var _default2 = {
     };
   },
   mounted: function mounted() {
-    console.log("///////////30")
     this.setFilterRef(this.column, this.$refs.filter);
-    console.log("///////////31")
   },
   render: function render() {
     var _this = this;

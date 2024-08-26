@@ -6,7 +6,6 @@ Object.defineProperty(exports, "__esModule", {
 Object.defineProperty(exports, "ClientTable", {
   enumerable: true,
   get: function get() {
-    console.log("getting Client Table")
     return _vClientTable["default"];
   }
 });
