@@ -182,9 +182,9 @@ function _default2(RLClientTable) {
             "class": props.theme.column
           }, [!props.opts.filterByColumn && props.opts.filterable ? (0, _vue.createVNode)("div", {
             "class": "".concat(props.theme.field, " ").concat(props.theme.inline, " ").concat(props.theme.left, " VueTables__search")
-          }, [props.slots.beforeFilter ? props.slots.beforeFilter() : '', /*(0, _vue.h)(_VtGenericFilter["default"])*/'', props.slots.afterFilter ? props.slots.afterFilter : '']) : '', props.slots.afterFilterWrapper ? props.slots.afterFilterWrapper() : '', (props.perPageValues.length > 1 || props.opts.alwaysShowPerPageSelect) && !props.opts.pagination.virtual ? (0, _vue.createVNode)("div", {
+          }, [props.slots.beforeFilter ? props.slots.beforeFilter() : '', (0, _vue.h)(_VtGenericFilter["default"]), props.slots.afterFilter ? props.slots.afterFilter : '']) : '', props.slots.afterFilterWrapper ? props.slots.afterFilterWrapper() : '', (props.perPageValues.length > 1 || props.opts.alwaysShowPerPageSelect) && !props.opts.pagination.virtual ? (0, _vue.createVNode)("div", {
             "class": "".concat(props.theme.field, " ").concat(props.theme.inline, " ").concat(props.theme.right, " VueTables__limit")
-          }, [props.slots.beforeLimit ? props.slots.beforeLimit() : '', /*(0, _vue.h)(_VtPerPageSelector["default"])*/'', props.slots.afterLimit ? props.slots.afterLimit : '']) : '', props.opts.pagination.dropdown && props.totalPages > 1 ? (0, _vue.createVNode)("div", {
+          }, [props.slots.beforeLimit ? props.slots.beforeLimit() : '', /*(0, _vue.h)*/(_VtPerPageSelector["default"]), props.slots.afterLimit ? props.slots.afterLimit : '']) : '', props.opts.pagination.dropdown && props.totalPages > 1 ? (0, _vue.createVNode)("div", {
             "class": "VueTables__pagination-wrapper"
           }, [(0, _vue.createVNode)("div", {
             "class": "".concat(props.theme.field, " ").concat(props.theme.inline, " ").concat(props.theme.right, " VueTables__dropdown-pagination")
