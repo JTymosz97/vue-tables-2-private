@@ -4,7 +4,7 @@ import omit from "../helpers/omit"
 
 export default {
     name: 'VtGenericFilter',
-    inject:['setRef'],
+    inject:['setReffffff'],
     components: {RLGenericFilter},
     setup() {
         const filter = ref(null);
@@ -14,7 +14,7 @@ export default {
         };
     },
     mounted() {
-        this.setRef('genericFilter', this.$refs.filter)
+        this.setReffffff('genericFilter', this.$refs.filter)
     },
     render() {
         return h(RLGenericFilter, {}, {

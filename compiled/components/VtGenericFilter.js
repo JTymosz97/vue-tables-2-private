@@ -15,7 +15,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 var _default2 = {
   name: 'VtGenericFilter',
-  inject: ['setRef'],
+  inject: ['setReffffff'],
   components: {
     RLGenericFilter: _RLGenericFilter["default"]
   },
@@ -26,7 +26,7 @@ var _default2 = {
     };
   },
   mounted: function mounted() {
-    this.setRef('genericFilter', this.$refs.filter);
+    this.setReffffff('genericFilter', this.$refs.filter);
   },
   render: function render() {
     return (0, _vue.h)(_RLGenericFilter["default"], {}, {
