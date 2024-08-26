@@ -161,44 +161,46 @@ function _default2(RLClientTable) {
       };
     },
     render: function render() {
-      return () => {}
-      // return (0, _vue.h)(RLClientTable, {
-      //   data: this.data,
-      //   columns: this.columns,
-      //   name: this.name,
-      //   options: this.options,
-      //   ref: 'table'
-      // }, {
-      //   "default": function _default(props) {
-      //     console.log("--------------------rendering-------------------")
-      //     return props.override ? (0, _vue.h)(props.override, {
-      //       props: (0, _omit["default"])(props, 'override')
-      //     }) : (0, _vue.createVNode)("div", {
-      //       "class": "VueTables VueTables--" + props.source
-      //     }, [(0, _vue.createVNode)("div", {
-      //       "class": props.theme.row
-      //     }, [(0, _vue.createVNode)("div", {
-      //       "class": props.theme.column
-      //     }, [!props.opts.filterByColumn && props.opts.filterable ? (0, _vue.createVNode)("div", {
-      //       "class": "".concat(props.theme.field, " ").concat(props.theme.inline, " ").concat(props.theme.left, " VueTables__search")
-      //     }, [props.slots.beforeFilter ? props.slots.beforeFilter() : '', (0, _vue.h)(_VtGenericFilter["default"]), props.slots.afterFilter ? props.slots.afterFilter : '']) : '', props.slots.afterFilterWrapper ? props.slots.afterFilterWrapper() : '', (props.perPageValues.length > 1 || props.opts.alwaysShowPerPageSelect) && !props.opts.pagination.virtual ? (0, _vue.createVNode)("div", {
-      //       "class": "".concat(props.theme.field, " ").concat(props.theme.inline, " ").concat(props.theme.right, " VueTables__limit")
-      //     }, [props.slots.beforeLimit ? props.slots.beforeLimit() : '', (0, _vue.h)(_VtPerPageSelector["default"]), props.slots.afterLimit ? props.slots.afterLimit : '']) : '', props.opts.pagination.dropdown && props.totalPages > 1 ? (0, _vue.createVNode)("div", {
-      //       "class": "VueTables__pagination-wrapper"
-      //     }, [(0, _vue.createVNode)("div", {
-      //       "class": "".concat(props.theme.field, " ").concat(props.theme.inline, " ").concat(props.theme.right, " VueTables__dropdown-pagination")
-      //     }, [(0, _vue.h)(_VtDropdownPagination["default"])])]) : '', props.opts.columnsDropdown ? (0, _vue.createVNode)("div", {
-      //       "class": "VueTables__columns-dropdown-wrapper ".concat(props.theme.right, " ").concat(props.theme.dropdown.container)
-      //     }, [(0, _vue.h)(_VtColumnsDropdown["default"])]) : ''])]), props.slots.beforeTable ? props.slots.beforeTable() : '', (0, _vue.createVNode)("div", {
-      //       "class": "table-responsive VueTables__wrapper",
-      //       "ref": "tablewrapper"
-      //     }, [(0, _vue.h)(_VtTable["default"]), props.opts.pagination.virtual ? (0, _vue.h)(_Observer["default"], {
-      //       onIntersect: function onIntersect() {
-      //         props.setPage(props.page + 1);
-      //       }
-      //     }) : '']), props.slots.afterTable ? props.slots.afterTable() : '', props.opts.pagination.virtual || !props.opts.pagination.show ? '' : (0, _vue.h)(_VtPagination["default"]), props.opts.pagination.virtual || props.opts.pagination.dropdown ? (0, _vue.h)(_VtPaginationCount["default"]) : '']);
-      //   }
-      // });
+      return (0, _vue.h)(RLClientTable, {
+        data: this.data,
+        columns: this.columns,
+        name: this.name,
+        options: this.options,
+        ref: 'table'
+      }, {
+        "default": function _default(props) {
+          console.log("--------------------rendering-------------------")
+          console.log(props.override)
+          console.log("--------------------rendering override-------------------")
+          return props.override ? (0, _vue.h)(props.override, {
+            props: (0, _omit["default"])(props, 'override')
+          }) : (0, _vue.createVNode)("div", {
+            "class": "VueTables VueTables--" + props.source
+          }, [(0, _vue.createVNode)("div", {
+            "class": props.theme.row
+          }, [(0, _vue.createVNode)("div", {
+            "class": props.theme.column
+          }, [!props.opts.filterByColumn && props.opts.filterable ? (0, _vue.createVNode)("div", {
+            "class": "".concat(props.theme.field, " ").concat(props.theme.inline, " ").concat(props.theme.left, " VueTables__search")
+          }, [props.slots.beforeFilter ? props.slots.beforeFilter() : '', (0, _vue.h)(_VtGenericFilter["default"]), props.slots.afterFilter ? props.slots.afterFilter : '']) : '', props.slots.afterFilterWrapper ? props.slots.afterFilterWrapper() : '', (props.perPageValues.length > 1 || props.opts.alwaysShowPerPageSelect) && !props.opts.pagination.virtual ? (0, _vue.createVNode)("div", {
+            "class": "".concat(props.theme.field, " ").concat(props.theme.inline, " ").concat(props.theme.right, " VueTables__limit")
+          }, [props.slots.beforeLimit ? props.slots.beforeLimit() : '', (0, _vue.h)(_VtPerPageSelector["default"]), props.slots.afterLimit ? props.slots.afterLimit : '']) : '', props.opts.pagination.dropdown && props.totalPages > 1 ? (0, _vue.createVNode)("div", {
+            "class": "VueTables__pagination-wrapper"
+          }, [(0, _vue.createVNode)("div", {
+            "class": "".concat(props.theme.field, " ").concat(props.theme.inline, " ").concat(props.theme.right, " VueTables__dropdown-pagination")
+          }, [(0, _vue.h)(_VtDropdownPagination["default"])])]) : '', props.opts.columnsDropdown ? (0, _vue.createVNode)("div", {
+            "class": "VueTables__columns-dropdown-wrapper ".concat(props.theme.right, " ").concat(props.theme.dropdown.container)
+          }, [(0, _vue.h)(_VtColumnsDropdown["default"])]) : ''])]),
+            props.slots.beforeTable ? props.slots.beforeTable() : '', (0, _vue.createVNode)("div", {
+            "class": "table-responsive VueTables__wrapper",
+            "ref": "tablewrapper"
+          }, [(0, _vue.h)(_VtTable["default"]), props.opts.pagination.virtual ? (0, _vue.h)(_Observer["default"], {
+            onIntersect: function onIntersect() {
+              props.setPage(props.page + 1);
+            }
+          }) : '']), props.slots.afterTable ? props.slots.afterTable() : '', props.opts.pagination.virtual || !props.opts.pagination.show ? '' : (0, _vue.h)(_VtPagination["default"]), props.opts.pagination.virtual || props.opts.pagination.dropdown ? (0, _vue.h)(_VtPaginationCount["default"]) : '']);
+        }
+      });
     }
   };
 }
