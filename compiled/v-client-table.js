@@ -30,7 +30,6 @@ var _created = require("./mixins/created");
 var provide = require("./mixins/provide");
 
 function install(app, globalOptions) {
-  console.log("installing Client table")
   var theme = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "bootstrap3";
   var componentsOverride = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
   var themeOverride = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : {};
@@ -78,9 +77,7 @@ function install(app, globalOptions) {
       this._setFiltersDOM(this.query);
 
       if (this.opts.resizableColumns) {
-        console.log("refs6.1")
         (0, _resizeableColumns["default"])(this.refs.table, this.hasChildRow, this.opts.childRowTogglerFirst, this.resizableColumns, this.opts.stickyHeader);
-        console.log("refs6.2")
       }
 
       if (this.groupBy && this.groupBy.length > 1) {
