@@ -143,9 +143,6 @@ function _default2(RLClientTable) {
         ref: 'table'
       }, {
         "default": function _default(props) {
-          console.log("--------------------rendering-------------------")
-          console.log(props.override)
-          console.log("--------------------rendering override-------------------")
           return props.override ? (0, _vue.h)(props.override, {
             props: (0, _omit["default"])(props, 'override')
           }) : (0, _vue.createVNode)("div", {
