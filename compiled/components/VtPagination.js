@@ -22,12 +22,11 @@ var _default2 = {
     Pagination: _vPagination["default"]
   },
   render: function render() {
-    console.log("************* pagination rendering **************")
-    console.log(props.override)
-    console.log("************* pagination rendered **************")
     return (0, _vue.h)(_RLPagination["default"], {}, {
       "default": function _default(props) {
-        console.log("************* pagination **************")
+        console.log("************* pagination rendering **************")
+        console.log(props.override)
+        console.log("************* pagination rendered **************")
         return props.override ? (0, _vue.h)(props.override, {
           props: (0, _omit["default"])(props)
         }) : (0, _vue.h)(_vPagination["default"], {
