@@ -168,11 +168,11 @@ function _default2(RLClientTable) {
             props.slots.beforeTable ? props.slots.beforeTable() : '', (0, _vue.createVNode)("div", {
             "class": "table-responsive VueTables__wrapper",
             "ref": "tablewrapper"
-          }, /*[(0, _vue.h)(_VtTable["default"]), props.opts.pagination.virtual ? (0, _vue.h)(_Observer["default"], {
+          }, [(0, _vue.h)(_VtTable["default"]), props.opts.pagination.virtual ? (0, _vue.h)(_Observer["default"], {
             onIntersect: function onIntersect() {
               props.setPage(props.page + 1);
             }
-          }) : '']*/), props.slots.afterTable ? props.slots.afterTable() : '', props.opts.pagination.virtual || !props.opts.pagination.show ? '' : ''/*(0, _vue.h)(_VtPagination["default"])*/, props.opts.pagination.virtual || props.opts.pagination.dropdown ? (0, _vue.h)(_VtPaginationCount["default"]) : '']);
+          }) : '']), props.slots.afterTable ? props.slots.afterTable() : '', props.opts.pagination.virtual || !props.opts.pagination.show ? '' : ''/*(0, _vue.h)(_VtPagination["default"])*/, props.opts.pagination.virtual || props.opts.pagination.dropdown ? (0, _vue.h)(_VtPaginationCount["default"]) : '']);
         }
       });
     }
