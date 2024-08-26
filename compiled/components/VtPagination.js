@@ -27,7 +27,7 @@ var _default2 = {
         console.log("************* pagination rendering **************")
         console.log(props)
         console.log("************* pagination rendered **************")
-        return props.override ? (0, _vue.h)(props.override, {
+        return () => {} /*props.override ? (0, _vue.h)(props.override, {
           props: (0, _omit["default"])(props)
         }) : (0, _vue.h)(_vPagination["default"], {
           options: props.optionsObj,
@@ -37,7 +37,7 @@ var _default2 = {
           "onUpdate:modelValue": function onUpdateModelValue(page) {
             return props.setPage(page);
           }
-        });
+        });*/
       }
     });
   }
