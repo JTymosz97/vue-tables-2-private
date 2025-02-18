@@ -1,5 +1,6 @@
 <template>
     <td :tabindex="props.tabIndex" :class="props.classes">
+        <div>asdfhasdfhasdfhj fhasdfasfasf asfasdfasfasdfasdfd</div>
         <vnodes :vnodes="props.content"/>
     </td>
 </template>

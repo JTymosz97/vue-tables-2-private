@@ -1,6 +1,7 @@
 <template>
     <table v-bind="props.tableAttrs">
-        <caption v-if="props.caption">{{props.caption}}</caption>
+        <div>dssssssssssssssssssssssssssssssssssssssssssssd</div>
+        <caption v-if="props.caption">{{props.caption}} ddddddddd</caption>
         <vt-table-head/>
         <vnodes :vnodes="props.slots.beforeBody"/>
         <vt-table-body ref="vt_table_body"/>
