@@ -61,6 +61,7 @@ function install(app, globalOptions) {
       }
     },
     created: function created() {
+      console.log("################################################################################")
       _created(this);
 
       if (this.opts.toMomentFormat) this.transformDateStringsToMoment();
