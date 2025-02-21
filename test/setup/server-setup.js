@@ -1,6 +1,6 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import Vuex from 'vuex'
-import { mount } from 'vue-test-utils'
+import { mount } from '@vue/test-utils'
 import ServerTable from '../../compiled/v-server-table.js'
 
 global.suite = 'Server';
@@ -10,8 +10,10 @@ global.moxios = require('moxios');
 
 import data from './example-data';
 
+const app = createApp({})
+
 if (withVuex()) {
-	Vue.use(Vuex);
+	app.use(Vuex);
 	suite+=' - Vuex';
 }
 
@@ -64,7 +66,7 @@ global.createWrapper = function(options = {}, columns = null, slots = {}) {
 		params.store = new Vuex.Store();
 	}
 
-	var servertable = ServerTable.install(Vue, {} ,withVuex());
+	var servertable = ServerTable.install(app, {} ,withVuex());
 
 	global.wrapper = mount(servertable, params);
 

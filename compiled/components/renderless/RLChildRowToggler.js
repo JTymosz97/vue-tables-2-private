@@ -24,6 +24,7 @@ var _default = {
       if (!callback) {
         return true;
       }
+
       return !callback(this.row());
     }
   }

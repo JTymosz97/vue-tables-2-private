@@ -1,7 +1,7 @@
 
-import Vue from 'vue'
+import { createApp } from 'vue'
 import Vuex from 'vuex'
-import { mount } from 'vue-test-utils'
+import { mount } from '@vue/test-utils'
 import ClientTable from '../../compiled/v-client-table'
 import {Event} from '../../compiled/index.js';
 import data from './example-data'
@@ -11,9 +11,11 @@ global.VueEvent = Event;
 global.suite = 'Client';
 global.source = 'client';
 
+const app = createApp({})
+
 if (withVuex()) {
 	suite+=" - Vuex";
-	Vue.use(Vuex);
+	app.use(Vuex);
 }
 
 global.run = function(cb, done, timeout = 0) {
@@ -53,7 +55,7 @@ global.createWrapper = function(options = {debounce:0, resizableColumns:false}, 
 		params.store =  new Vuex.Store();
 	}
 
-	global.wrapper = mount(ClientTable.install(Vue,{},withVuex()), params);
+	global.wrapper = mount(ClientTable.install(app,{},withVuex()), params);
 
 	return wrapper;
 }

@@ -13,14 +13,14 @@ module.exports = {
         library: 'VueTables'
     },
     resolve: {
-        extensions: [".js", ".jsx"]
+        extensions: ['.mjs', ".js", ".jsx"]
     },
     optimization: {
         minimize: env === 'production'
     },
     externals: {
         vue: {
-            root: 'Vue',
+            root: 'vue',
             commonjs: 'vue',
             commonjs2: 'vue',
             amd: 'vue'
@@ -32,6 +32,11 @@ module.exports = {
                 test: /\.jsx?$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/
+            },
+            {
+                test: /\.mjs$/,
+                include: /node_modules/,
+                type: 'javascript/auto'
             }
         ]
     },
